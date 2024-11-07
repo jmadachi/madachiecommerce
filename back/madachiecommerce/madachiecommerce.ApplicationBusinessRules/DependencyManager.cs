@@ -10,6 +10,7 @@ public static class DependencyManager
         services.AddScoped<ICreateOrderHeaderInputPort, CreateOrderHeaderInteractor>();
         services.AddScoped<IListOrderDetailsInputPort, ListOrderDetailsInteractor>();
         services.AddScoped<IListOrderHeadersInputPort, ListOrderHeadersInteractor>();
+        services.AddScoped<IListProductsInputPort, ListProductsInteractor>();
         return services;
     }
 }

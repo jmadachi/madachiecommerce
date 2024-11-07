@@ -11,16 +11,19 @@ namespace madachiecommerce.InterfacesAdapters.Presenters
             services.AddScoped<CreateOrderHeaderPresenter>();
             services.AddScoped<ListOrderHeadersPresenter>();
             services.AddScoped<ListOrderDetailsPresenter>();
+            services.AddScoped<ListProductsPresenter>();
 
             services.AddScoped<ICreateOrderDetailOutputPort>(provider => provider.GetService<CreateOrderDetailPresenter>());
             services.AddScoped<ICreateOrderHeaderOutputPort>(provider => provider.GetService<CreateOrderHeaderPresenter>());
             services.AddScoped<IListOrderHeadersOutputPort>(provider => provider.GetService<ListOrderHeadersPresenter>());
             services.AddScoped<IListOrderDetailsOutputPort>(provider => provider.GetService<ListOrderDetailsPresenter>());
+            services.AddScoped<IListProductsOutputPort>(provider => provider.GetService<ListProductsPresenter>());
 
             services.AddScoped<ICreateOrderDetailPresenter>(provider => provider.GetService<CreateOrderDetailPresenter>());
             services.AddScoped<ICreateOrderHeaderPresenter>(provider => provider.GetService<CreateOrderHeaderPresenter>());
             services.AddScoped<IListOrderDetailsPresenter>(provider => provider.GetService<ListOrderDetailsPresenter>());
             services.AddScoped<IListOrderHeadersPresenter>(provider => provider.GetService<ListOrderHeadersPresenter>());
+            services.AddScoped<IListProductsPresenter>(provider => provider.GetService<ListProductsPresenter>());
 
             return services;
         }
