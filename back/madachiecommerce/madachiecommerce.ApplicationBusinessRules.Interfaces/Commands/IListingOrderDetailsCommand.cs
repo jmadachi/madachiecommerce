@@ -3,5 +3,5 @@
 namespace madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
 public interface IListingOrderDetailsCommand
 {
-    ValueTask<IEnumerable<OrderDetailDto>> ListingOrderDetails();
+    ValueTask<IEnumerable<OrderDetailDto>> ListingOrderDetails(int orderHeaderId);
 }
