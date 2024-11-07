@@ -12,8 +12,4 @@
     <ProjectReference Include="..\madachiecommerce.EnterpriseBusinessRules.Interfaces\madachiecommerce.EnterpriseBusinessRules.Interfaces.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Presenters\" />
-  </ItemGroup>
-
 </Project>
