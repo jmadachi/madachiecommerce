@@ -3,5 +3,5 @@
 namespace madachiecommerce.ApplicationBusinessRules.Interfaces;
 public interface IListOrderHeadersPresenter: IListOrderHeadersOutputPort
 {
-    IEnumerable<OrderHeaderDto> orderHeaders { get; }
+    IEnumerable<OrderHeaderDto> OrderHeaders { get; }
 }

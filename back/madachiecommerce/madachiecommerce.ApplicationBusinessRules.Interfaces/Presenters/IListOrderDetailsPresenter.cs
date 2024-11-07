@@ -3,5 +3,5 @@
 namespace madachiecommerce.ApplicationBusinessRules.Interfaces;
 public interface IListOrderDetailsPresenter: IListOrderDetailsOutputPort
 {
-    IEnumerable<OrderDetailDto> orderDetails { get; }
+    IEnumerable<OrderDetailDto> OrderDetails { get; }
 }

@@ -12,7 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\madachiecommerce.ApplicationBusinessRules\madachiecommerce.ApplicationBusinessRules.UseCases.csproj" />
+    <ProjectReference Include="..\madachiecommerce.InterfaceAdapters.Controller\madachiecommerce.InterfaceAdapters.Controllers.csproj" />
     <ProjectReference Include="..\madachiecommerce.InterfaceAdapters.Gateways\madachiecommerce.InterfaceAdapters.Gateways.csproj" />
+    <ProjectReference Include="..\madachiecommerce.InterfacesAdapters.Presenters\madachiecommerce.InterfacesAdapters.Presenters.csproj" />
   </ItemGroup>
 
 </Project>

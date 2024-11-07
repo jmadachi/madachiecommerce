@@ -2,12 +2,12 @@
 using madachiecommerce.ApplicationBusinessRules.Interfaces;
 
 namespace madachiecommerce.InterfaceAdapters.Controllers;
-public class ListOrderHeaderController: IListOrderHeadersController
+public class ListOrderHeadersController: IListOrderHeadersController
 {
     readonly IListOrderHeadersInputPort InputPort;
     readonly IListOrderHeadersPresenter Presenter;
 
-    public ListOrderHeaderController(IListOrderHeadersInputPort inputPort, IListOrderHeadersPresenter presenter)
+    public ListOrderHeadersController(IListOrderHeadersInputPort inputPort, IListOrderHeadersPresenter presenter)
     {
         InputPort = inputPort;
         Presenter = presenter;  
@@ -16,6 +16,6 @@ public class ListOrderHeaderController: IListOrderHeadersController
     public async ValueTask<IEnumerable<OrderHeaderDto>> ListOrderHeaders()
     {
         await InputPort.Handle();
-        return Presenter.orderHeaders;
+        return Presenter.OrderHeaders;
     }
 }

@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.InterfaceA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.InterfaceAdapters.Gateways", "madachiecommerce.InterfaceAdapters.Gateways\madachiecommerce.InterfaceAdapters.Gateways.csproj", "{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.InterfaceAdapters.InversionOfControls", "madachiecommerce.InterfaceAdapters.InversionOfControls\madachiecommerce.InterfaceAdapters.InversionOfControls.csproj", "{0BE40580-55CD-4334-AB0D-7026D04DD1C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.InterfaceAdapters.InversionOfControls", "madachiecommerce.InterfaceAdapters.InversionOfControls\madachiecommerce.InterfaceAdapters.InversionOfControls.csproj", "{0BE40580-55CD-4334-AB0D-7026D04DD1C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.InterfacesAdapters.Presenters", "madachiecommerce.InterfacesAdapters.Presenters\madachiecommerce.InterfacesAdapters.Presenters.csproj", "{08D461B5-369B-4E59-B6CE-34DF2D0CFC31}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{0BE40580-55CD-4334-AB0D-7026D04DD1C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BE40580-55CD-4334-AB0D-7026D04DD1C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BE40580-55CD-4334-AB0D-7026D04DD1C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D461B5-369B-4E59-B6CE-34DF2D0CFC31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D461B5-369B-4E59-B6CE-34DF2D0CFC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D461B5-369B-4E59-B6CE-34DF2D0CFC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D461B5-369B-4E59-B6CE-34DF2D0CFC31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{E94519D4-04C4-40EA-86CD-82110A960A98} = {958E7B5F-FD71-405B-93C4-820373CBC966}
 		{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C} = {958E7B5F-FD71-405B-93C4-820373CBC966}
 		{0BE40580-55CD-4334-AB0D-7026D04DD1C2} = {958E7B5F-FD71-405B-93C4-820373CBC966}
+		{08D461B5-369B-4E59-B6CE-34DF2D0CFC31} = {958E7B5F-FD71-405B-93C4-820373CBC966}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92B51D5F-F6C5-4327-AA28-6D5D24B4DE31}

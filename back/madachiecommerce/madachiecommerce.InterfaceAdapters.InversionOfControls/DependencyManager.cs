@@ -1,4 +1,7 @@
-﻿using madachiecommerce.InterfaceAdapters.Gateways;
+﻿using madachiecommerce.ApplicationBusinessRules.UseCases;
+using madachiecommerce.InterfaceAdapters.Gateways;
+using madachiecommerce.InterfacesAdapters.Presenters;
+using madachiecommerce.InterfaceAdapters.Controllers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
