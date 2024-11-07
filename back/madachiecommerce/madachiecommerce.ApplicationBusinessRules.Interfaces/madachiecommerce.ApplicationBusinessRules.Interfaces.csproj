@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\madachiecommerce.ApplicationBusinessRules.Dtos\madachiecommerce.ApplicationBusinessRules.Dtos.csproj" />
+    <ProjectReference Include="..\madachiecommerce.EnterpriseBusinessRules.Entities\madachiecommerce.EnterpriseBusinessRules.Entities.csproj" />
+    <ProjectReference Include="..\madachiecommerce.EnterpriseBusinessRules.Interfaces\madachiecommerce.EnterpriseBusinessRules.Interfaces.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Presenters\" />
+  </ItemGroup>
+
+</Project>
