@@ -5,26 +5,26 @@ using madachiecommerce.EnterpriseBusinessRules.Interfaces;
 
 namespace madachiecommerce.InterfaceAdapters.Gateways.Repositories
 {
-    public class CreateOrderDetailRepository: ICreateOrderDetailRepository
+    public class CreateOrderHeaderRepository: ICreateOrderHeaderRepository
     {
         readonly madachiecommerceContext Context;
 
-        public CreateOrderDetailRepository(madachiecommerceContext context)
+        public CreateOrderHeaderRepository(madachiecommerceContext context)
         {
             Context = context;
         }   
 
-        public async ValueTask<OrderDetailDto> CreateOrderDetail(OrderDetailEntity orderDetail)
+        public async ValueTask<OrderHeaderDto> CreateOrderHeader(OrderHeaderEntity orderHeader)
         {
-            await Context.AddAsync(orderDetail);
-            var orderDetailDto = new OrderDetailDto
+            await Context.AddAsync(orderHeader);
+            var orderHeaderDto = new OrderHeaderDto
             {
-                Id = orderDetail.Id,
-                OrderHeaderId = orderDetail.OrderHeaderId,
-                ProductId = orderDetail.ProductId,
-                Amount = orderDetail.Amount,
+                Id = orderHeader.Id,
+                CustomerId = orderHeader.CustomerId,
+                OrderNumber = orderHeader.OrderNumber,
+                Date = orderHeader.Date,
             };
-            return orderDetailDto;
+            return orderHeaderDto;
         }
 
 

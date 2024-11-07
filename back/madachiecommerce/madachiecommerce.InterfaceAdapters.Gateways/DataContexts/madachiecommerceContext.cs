@@ -1,7 +1,7 @@
 ﻿using madachiecommerce.EnterpriseBusinessRules.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace madachiecommerce.InterfaceAdapters.Gateways.DataContexts;
+namespace madachiecommerce.InterfaceAdapters.Gateways;
 public class madachiecommerceContext: DbContext
 {
     public madachiecommerceContext(DbContextOptions<madachiecommerceContext> options): base(options) { }

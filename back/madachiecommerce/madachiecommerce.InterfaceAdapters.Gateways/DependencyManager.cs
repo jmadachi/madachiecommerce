@@ -1,4 +1,4 @@
-﻿using madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
+﻿using madachiecommerce.ApplicationBusinessRules.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,9 +7,9 @@ namespace madachiecommerce.InterfaceAdapters.Gateways
 {
     public static class DependencyManager
     {
-        public static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration, string connection)
+        public static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration, string connectionDataBase)
         {
-            services.AddDbContext<>(options => options.UseSqlServer(configuration.GetConnectionString(connectionStringName)));
+            services.AddDbContext<madachiecommerceContext>(options => options.UseSqlServer(configuration.GetConnectionString(connectionDataBase)));
             services.AddScoped<ICreateOrderDetailRepository>();
             return services;
         }

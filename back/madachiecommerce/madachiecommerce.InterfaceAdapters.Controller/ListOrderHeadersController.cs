@@ -1,7 +1,5 @@
 ﻿using madachiecommerce.ApplicationBusinessRules.Dtos;
 using madachiecommerce.ApplicationBusinessRules.Interfaces;
-using madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
-using madachiecommerce.ApplicationBusinessRules.Interfaces.Presenters;
 
 namespace madachiecommerce.InterfaceAdapters.Controllers;
 public class ListOrderHeaderController: IListOrderHeadersController

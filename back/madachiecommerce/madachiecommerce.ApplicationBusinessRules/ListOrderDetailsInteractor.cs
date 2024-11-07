@@ -1,5 +1,4 @@
-﻿using madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
-using madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
+﻿using madachiecommerce.ApplicationBusinessRules.Interfaces;
 
 namespace madachiecommerce.ApplicationBusinessRules;
 public class ListOrderDetailsInteractor: IListOrderDetailsInputPort
@@ -14,7 +13,7 @@ public class ListOrderDetailsInteractor: IListOrderDetailsInputPort
 
     public async ValueTask Handle(int orderHeaderId)
     {
-        var entities = await Repository.ListingOrderDetails(orderHeaderId);
+        var entities = await Repository.ListOrderDetails(orderHeaderId);
         await OutputPort.Handle(entities);
     }
 }

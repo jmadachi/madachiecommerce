@@ -1,6 +1,5 @@
 ﻿using madachiecommerce.ApplicationBusinessRules.Dtos;
-using madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
-using madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
+using madachiecommerce.ApplicationBusinessRules.Interfaces;
 using madachiecommerce.EnterpriseBusinessRules.Entities;
 
 namespace madachiecommerce.ApplicationBusinessRules;

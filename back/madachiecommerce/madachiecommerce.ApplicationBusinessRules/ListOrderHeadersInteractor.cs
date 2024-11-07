@@ -1,13 +1,12 @@
-﻿using madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
-using madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
+﻿using madachiecommerce.ApplicationBusinessRules.Interfaces;
 
 namespace madachiecommerce.ApplicationBusinessRules;
-public class ListingOrderHeadersInteractor: IListOrderHeadersInputPort
+public class ListOrderHeadersInteractor: IListOrderHeadersInputPort
 {
     readonly IListOrderHeadersRepository Repository;
     readonly IListOrderHeadersOutputPort OutputPort;
 
-    public ListingOrderHeadersInteractor(IListOrderHeadersRepository repository, IListOrderHeadersOutputPort outputPort) {  
+    public ListOrderHeadersInteractor(IListOrderHeadersRepository repository, IListOrderHeadersOutputPort outputPort) {  
         Repository = repository; 
         OutputPort = outputPort;
     }

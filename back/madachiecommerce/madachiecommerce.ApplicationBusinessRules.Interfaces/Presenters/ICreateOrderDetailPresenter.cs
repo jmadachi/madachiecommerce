@@ -1,6 +1,4 @@
-﻿using madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
-
-namespace madachiecommerce.ApplicationBusinessRules.Interfaces.Presenters;
+﻿namespace madachiecommerce.ApplicationBusinessRules.Interfaces;
 public interface ICreateOrderDetailPresenter: ICreateOrderDetailOutputPort
 {
     int OrderDetailId { get; }

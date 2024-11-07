@@ -1,7 +1,7 @@
 ﻿using madachiecommerce.ApplicationBusinessRules.Dtos;
 
-namespace madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
+namespace madachiecommerce.ApplicationBusinessRules.Interfaces;
 public interface IListOrderHeadersRepository
 {
-    ValueTask<IEnumerable<OrderHeaderDto>> ListingOrderHeaders();
+    ValueTask<IEnumerable<OrderHeaderDto>> ListOrderHeaders();
 }
