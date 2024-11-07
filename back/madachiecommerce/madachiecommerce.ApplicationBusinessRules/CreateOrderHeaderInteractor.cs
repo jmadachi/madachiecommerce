@@ -6,10 +6,10 @@ using madachiecommerce.EnterpriseBusinessRules.Entities;
 namespace madachiecommerce.ApplicationBusinessRules;
 public class CreateOrderHeaderInteractor: ICreateOrderHeaderInputPort
 {
-    readonly ICreateOrderHeaderCommand Repository;
+    readonly ICreateOrderHeaderRepository Repository;
     readonly ICreateOrderHeaderOutputPort OutputPort;
 
-    public CreateOrderHeaderInteractor(ICreateOrderHeaderCommand repository, ICreateOrderHeaderOutputPort outputPort) {  
+    public CreateOrderHeaderInteractor(ICreateOrderHeaderRepository repository, ICreateOrderHeaderOutputPort outputPort) {  
         Repository = repository; 
         OutputPort = outputPort;
     }

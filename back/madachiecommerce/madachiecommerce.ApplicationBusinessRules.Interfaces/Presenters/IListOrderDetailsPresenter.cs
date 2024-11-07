@@ -2,7 +2,7 @@
 using madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
 
 namespace madachiecommerce.ApplicationBusinessRules.Interfaces.Presenters;
-public interface IListingOrderDetailsPresenter: IListingOrderDetailsOutputPort
+public interface IListOrderDetailsPresenter: IListOrderDetailsOutputPort
 {
     IEnumerable<OrderDetailDto> orderDetails { get; }
 }

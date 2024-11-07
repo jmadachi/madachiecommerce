@@ -1,5 +1,5 @@
 ﻿namespace madachiecommerce.ApplicationBusinessRules.Interfaces.Ports;
-public interface IListingOrderHeadersInputPort
+public interface IListOrderHeadersInputPort
 {
     ValueTask Handle();
 }

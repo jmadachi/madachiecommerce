@@ -3,7 +3,7 @@ using madachiecommerce.EnterpriseBusinessRules.Entities;
 using madachiecommerce.EnterpriseBusinessRules.Interfaces;
 
 namespace madachiecommerce.ApplicationBusinessRules.Interfaces.Commands;
-public interface ICreateOrderDetailCommand: IUnitOfWork
+public interface ICreateOrderDetailRepository: IUnitOfWork
 {
     ValueTask<OrderDetailDto> CreateOrderDetail(OrderDetailEntity orderDetail);
 }

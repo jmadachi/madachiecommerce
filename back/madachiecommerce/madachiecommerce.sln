@@ -11,17 +11,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.InterfaceAdapters", "03.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.FrameworksAndDrivers", "04.FrameworksAndDrivers", "{10727309-8E0F-41F5-A5AD-59532EEF9ACC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.EnterpriseBusinessRules.Entities", "madachiecommerce.EnterpriseBusinessRules.Entities\madachiecommerce.EnterpriseBusinessRules.Entities.csproj", "{8523B445-245C-4045-8FA5-CF437A5758B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.EnterpriseBusinessRules.Entities", "madachiecommerce.EnterpriseBusinessRules.Entities\madachiecommerce.EnterpriseBusinessRules.Entities.csproj", "{8523B445-245C-4045-8FA5-CF437A5758B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.EnterpriseBusinessRules.Interfaces", "madachiecommerce.EnterpriseBusinessRules.Interfaces\madachiecommerce.EnterpriseBusinessRules.Interfaces.csproj", "{331BDD7A-ED84-446F-A72B-46FD07B69B6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.EnterpriseBusinessRules.Interfaces", "madachiecommerce.EnterpriseBusinessRules.Interfaces\madachiecommerce.EnterpriseBusinessRules.Interfaces.csproj", "{331BDD7A-ED84-446F-A72B-46FD07B69B6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.ApplicationBusinessRules.Dtos", "madachiecommerce.ApplicationBusinessRules.Dtos\madachiecommerce.ApplicationBusinessRules.Dtos.csproj", "{813388D8-0C11-4775-9702-5CDC678A349B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.ApplicationBusinessRules.Dtos", "madachiecommerce.ApplicationBusinessRules.Dtos\madachiecommerce.ApplicationBusinessRules.Dtos.csproj", "{813388D8-0C11-4775-9702-5CDC678A349B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.ApplicationBusinessRules.Interfaces", "madachiecommerce.ApplicationBusinessRules.Interfaces\madachiecommerce.ApplicationBusinessRules.Interfaces.csproj", "{874BD7B8-F2BE-4D3D-B6E0-205F1F1C6C68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.ApplicationBusinessRules.Interfaces", "madachiecommerce.ApplicationBusinessRules.Interfaces\madachiecommerce.ApplicationBusinessRules.Interfaces.csproj", "{874BD7B8-F2BE-4D3D-B6E0-205F1F1C6C68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.ApplicationBusinessRules.UseCases", "madachiecommerce.ApplicationBusinessRules\madachiecommerce.ApplicationBusinessRules.UseCases.csproj", "{24F35D4B-3F61-45D0-99BF-22C136FC25BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.ApplicationBusinessRules.UseCases", "madachiecommerce.ApplicationBusinessRules\madachiecommerce.ApplicationBusinessRules.UseCases.csproj", "{24F35D4B-3F61-45D0-99BF-22C136FC25BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.InterfaceAdapters.Controllers", "madachiecommerce.InterfaceAdapters.Controller\madachiecommerce.InterfaceAdapters.Controllers.csproj", "{E94519D4-04C4-40EA-86CD-82110A960A98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "madachiecommerce.InterfaceAdapters.Controllers", "madachiecommerce.InterfaceAdapters.Controller\madachiecommerce.InterfaceAdapters.Controllers.csproj", "{E94519D4-04C4-40EA-86CD-82110A960A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.InterfaceAdapters.Gateways", "madachiecommerce.InterfaceAdapters.Gateways\madachiecommerce.InterfaceAdapters.Gateways.csproj", "{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{E94519D4-04C4-40EA-86CD-82110A960A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E94519D4-04C4-40EA-86CD-82110A960A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E94519D4-04C4-40EA-86CD-82110A960A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{874BD7B8-F2BE-4D3D-B6E0-205F1F1C6C68} = {519A5152-D286-4ED5-A888-637D3C8A00A1}
 		{24F35D4B-3F61-45D0-99BF-22C136FC25BE} = {519A5152-D286-4ED5-A888-637D3C8A00A1}
 		{E94519D4-04C4-40EA-86CD-82110A960A98} = {958E7B5F-FD71-405B-93C4-820373CBC966}
+		{FDFF1553-C032-4FDE-A76F-6EFE4D20DB2C} = {958E7B5F-FD71-405B-93C4-820373CBC966}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92B51D5F-F6C5-4327-AA28-6D5D24B4DE31}

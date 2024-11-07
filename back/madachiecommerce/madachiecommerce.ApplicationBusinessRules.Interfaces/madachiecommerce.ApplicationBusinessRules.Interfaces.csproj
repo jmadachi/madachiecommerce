@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.13.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="4.66.1" />
+    <PackageReference Include="System.Formats.Asn1" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\madachiecommerce.ApplicationBusinessRules.Dtos\madachiecommerce.ApplicationBusinessRules.Dtos.csproj" />
     <ProjectReference Include="..\madachiecommerce.EnterpriseBusinessRules.Entities\madachiecommerce.EnterpriseBusinessRules.Entities.csproj" />
     <ProjectReference Include="..\madachiecommerce.EnterpriseBusinessRules.Interfaces\madachiecommerce.EnterpriseBusinessRules.Interfaces.csproj" />
