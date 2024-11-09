@@ -13,11 +13,11 @@ public class UserEndpoints : ControllerBase
     { 
         LoginController = loginController;
     }
-    [HttpPost]
-    public async ValueTask<ActionResult<UserDto>> Login(string name, string password)
+    [HttpPost("login")]
+    public async ValueTask<ActionResult<UserDto>> Login(LoginDto login)
     {
-        var user = await LoginController.Login(name, password);
-        if (user == null) return NotFound(); else return Ok(user);
+        var user = await LoginController.Login(login.Name, login.Password);
+        if (user == null) return Unauthorized(); else return Ok(user);
     }
 
 }

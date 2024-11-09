@@ -1,12 +1,12 @@
 ﻿using madachiecommerce.ApplicationBusinessRules.Interfaces;
 
 namespace madachiecommerce.ApplicationBusinessRules;
-public class ListProductsInteractor: IListProductsInputPort
+public class ListProductsUseCase: IListProductsInputPort
 {
     readonly IListProductsRepository Repository;
     readonly IListProductsOutputPort OutputPort;
 
-    public ListProductsInteractor(IListProductsRepository repository, IListProductsOutputPort outputPort) {  
+    public ListProductsUseCase(IListProductsRepository repository, IListProductsOutputPort outputPort) {  
         Repository = repository; 
         OutputPort = outputPort;
     }

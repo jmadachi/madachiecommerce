@@ -6,12 +6,12 @@ public static class DependencyManager
 {
     public static IServiceCollection AddUseCasesServices(this IServiceCollection services)
     {
-        services.AddScoped<ICreateOrderDetailInputPort, CreateOrderDetailInteractor>();
-        services.AddScoped<ICreateOrderHeaderInputPort, CreateOrderHeaderInteractor>();
-        services.AddScoped<IListOrderDetailsInputPort, ListOrderDetailsInteractor>();
-        services.AddScoped<IListOrderHeadersInputPort, ListOrderHeadersInteractor>();
-        services.AddScoped<IListProductsInputPort, ListProductsInteractor>();
-        services.AddScoped<ILoginInputPort, LoginInteractor>();
+        services.AddScoped<ICreateOrderDetailInputPort, CreateOrderDetailUseCase>();
+        services.AddScoped<ICreateOrderHeaderInputPort, CreateOrderHeaderUseCase>();
+        services.AddScoped<IListOrderDetailsInputPort, ListOrderDetailsUseCase>();
+        services.AddScoped<IListOrderHeadersInputPort, ListOrderHeadersUseCase>();
+        services.AddScoped<IListProductsInputPort, ListProductsUseCase>();
+        services.AddScoped<ILoginInputPort, LoginUseCase>();
         return services;
     }
 }

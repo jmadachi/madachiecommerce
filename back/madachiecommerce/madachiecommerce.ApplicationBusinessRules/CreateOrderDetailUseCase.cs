@@ -3,12 +3,12 @@ using madachiecommerce.ApplicationBusinessRules.Interfaces;
 using madachiecommerce.EnterpriseBusinessRules.Entities;
 
 namespace madachiecommerce.ApplicationBusinessRules;
-public class CreateOrderDetailInteractor: ICreateOrderDetailInputPort
+public class CreateOrderDetailUseCase: ICreateOrderDetailInputPort
 {
     readonly ICreateOrderDetailRepository Repository;
     readonly ICreateOrderDetailOutputPort OutputPort;
 
-    public CreateOrderDetailInteractor(ICreateOrderDetailRepository repository, ICreateOrderDetailOutputPort outputPort) {  
+    public CreateOrderDetailUseCase(ICreateOrderDetailRepository repository, ICreateOrderDetailOutputPort outputPort) {  
         Repository = repository; 
         OutputPort = outputPort;
     }
