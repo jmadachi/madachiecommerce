@@ -1,18 +1,30 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./pages/Login/Login";
-import Orders from "./pages/Orders/Orders";
+import { BrowserRouter, Navigate, Route } from "react-router-dom";
+import { PrivateRoutes, PublicRoutes } from "./routes";
+import { AuthGuard } from "./guards";
+import { RoutesNotFound } from "./tools";
+import { lazy, Suspense } from "react";
+import { Provider } from "react-redux";
+import store from "./redux/store";
+
+const Login = lazy(() => import('./pages/Login/Login'));
+const OrderManagement = lazy(() => import('./pages/OrderManagement/OrderManagement'));
 
 export default function App() {
-
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Login/>} />
-          <Route path="*" element={<>PAGE NOT FOUNT</>} />
-          <Route path="/orders" element={<Orders/>} />
-        </Routes>
-      </BrowserRouter>
+      <Suspense fallback={<>Loadding...</>}>
+        <Provider store={store}>
+          <BrowserRouter>
+            <RoutesNotFound>
+              <Route path="/" element={<Navigate to={PrivateRoutes.ORDERS} />} />
+              <Route path={PublicRoutes.LOGIN} element={<Login/>} />
+              <Route element={<AuthGuard/>} >
+                <Route path={`${PrivateRoutes.ORDER_MANAGEMENT}/*`} element={<OrderManagement/>} />
+              </Route>
+            </RoutesNotFound>
+          </BrowserRouter>
+        </Provider>
+      </Suspense>
     </div>
   )
 }
