@@ -16,6 +16,7 @@ namespace madachiecommerce.InterfaceAdapters.Gateways
             services.AddScoped<IListOrderDetailsRepository, ListOrderDetailsRepository>();
             services.AddScoped<IListOrderHeadersRepository, ListOrderHeadersRepository>();
             services.AddScoped<IListProductsRepository, ListProductsRepository>();
+            services.AddScoped<IGetUserByNameRepository, GetUserByNameRepository>();
             return services;
         }
     }

@@ -1,6 +1,5 @@
 ﻿using madachiecommerce.ApplicationBusinessRules.Dtos;
 using madachiecommerce.ApplicationBusinessRules.Interfaces;
-using madachiecommerce.InterfaceAdapters.Gateways;
 using Microsoft.AspNetCore.Mvc;
 
 namespace madachiecommerce.FrameworksAndDrivers.WebApi.Enpoints
@@ -9,11 +8,9 @@ namespace madachiecommerce.FrameworksAndDrivers.WebApi.Enpoints
     [Route("api/orders")]
     public class OrdersEndpoint: ControllerBase
     {
-        private readonly madachiecommerceContext Context;
         private readonly IListOrderDetailsController OrderDetailsController;
-        public OrdersEndpoint(madachiecommerceContext context, IListOrderDetailsController orderDetailsController)
+        public OrdersEndpoint(IListOrderDetailsController orderDetailsController)
         {
-            Context = context;
             OrderDetailsController = orderDetailsController;    
         }
 

@@ -11,6 +11,7 @@ public static class DependencyManager
         services.AddScoped<IListOrderDetailsController, ListOrderDetailsController>();
         services.AddScoped<IListOrderHeadersController, ListOrderHeadersController>();
         services.AddScoped<IListProductsController, ListProductsController>();
+        services.AddScoped<ILoginController, LoginController>();
         return services;
     }
 }

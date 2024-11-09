@@ -13,14 +13,8 @@ public class ListProductsInteractor: IListProductsInputPort
 
     public async ValueTask Handle()
     {
-        try
-        {
-            var entities = await Repository.ListProducts();
-            await OutputPort.Handle(entities);
-        }
-        catch (Exception ex) {
-            throw ex;
-        }
+        var entities = await Repository.ListProducts();
+        await OutputPort.Handle(entities);
     }
 
 }
