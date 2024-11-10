@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.Interfaces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.FrameworksAndDrivers.WebApi", "madachiecommerce.FrameworksAndDrivers.WebApi\madachiecommerce.FrameworksAndDrivers.WebApi.csproj", "{166329C7-B691-4C67-9AA9-79A8FE2CDF6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "madachiecommerce.ApplicationBusinessRules.Tools", "madachiecommerce.ApplicationBusinessRules.Tools\madachiecommerce.ApplicationBusinessRules.Tools.csproj", "{F2CCAF57-1CBC-4E7E-88BE-22C03BFE58EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{166329C7-B691-4C67-9AA9-79A8FE2CDF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{166329C7-B691-4C67-9AA9-79A8FE2CDF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{166329C7-B691-4C67-9AA9-79A8FE2CDF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CCAF57-1CBC-4E7E-88BE-22C03BFE58EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CCAF57-1CBC-4E7E-88BE-22C03BFE58EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CCAF57-1CBC-4E7E-88BE-22C03BFE58EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CCAF57-1CBC-4E7E-88BE-22C03BFE58EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,6 +98,7 @@ Global
 		{0BE40580-55CD-4334-AB0D-7026D04DD1C2} = {958E7B5F-FD71-405B-93C4-820373CBC966}
 		{08D461B5-369B-4E59-B6CE-34DF2D0CFC31} = {958E7B5F-FD71-405B-93C4-820373CBC966}
 		{166329C7-B691-4C67-9AA9-79A8FE2CDF6F} = {10727309-8E0F-41F5-A5AD-59532EEF9ACC}
+		{F2CCAF57-1CBC-4E7E-88BE-22C03BFE58EC} = {519A5152-D286-4ED5-A888-637D3C8A00A1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92B51D5F-F6C5-4327-AA28-6D5D24B4DE31}

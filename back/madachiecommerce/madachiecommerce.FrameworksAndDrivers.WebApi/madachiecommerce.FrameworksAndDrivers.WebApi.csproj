@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\madachiecommerce.InterfaceAdapters.Gateways\madachiecommerce.InterfaceAdapters.Gateways.csproj" />
     <ProjectReference Include="..\madachiecommerce.InterfaceAdapters.InversionOfControls\madachiecommerce.InterfaceAdapters.InversionOfControls.csproj" />
   </ItemGroup>

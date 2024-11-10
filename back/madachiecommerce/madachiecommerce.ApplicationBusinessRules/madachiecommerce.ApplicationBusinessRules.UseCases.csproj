@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\madachiecommerce.ApplicationBusinessRules.Interfaces\madachiecommerce.ApplicationBusinessRules.Interfaces.csproj" />
+    <ProjectReference Include="..\madachiecommerce.ApplicationBusinessRules.Tools\madachiecommerce.ApplicationBusinessRules.Tools.csproj" />
   </ItemGroup>
 
 </Project>

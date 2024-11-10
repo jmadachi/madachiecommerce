@@ -5,5 +5,6 @@ export const PublicRoutes = {
 export const PrivateRoutes = {
     ORDER_MANAGEMENT: 'orderManagement',
     ORDERS: 'orders',
-    CREATE_ORDER: 'createOrder'
+    CREATE_ORDER: 'createOrder',
+    PRODUCTS: 'products'
 };

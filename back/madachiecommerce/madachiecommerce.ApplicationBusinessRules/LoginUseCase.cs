@@ -1,5 +1,6 @@
 ﻿using madachiecommerce.ApplicationBusinessRules.Dtos;
 using madachiecommerce.ApplicationBusinessRules.Interfaces;
+using madachiecommerce.ApplicationBusinessRules.Tools;
 
 namespace madachiecommerce.ApplicationBusinessRules;
 public class LoginUseCase: ILoginInputPort
@@ -15,8 +16,9 @@ public class LoginUseCase: ILoginInputPort
     public async ValueTask Handle(string name, string password)
     {
         var userEntity = await Repository.GetUserByName(name);
+        var encriptedPassword = Encripting.getSHA512(password);
 
-        if ((userEntity == null) || (userEntity.Password != password)) 
+        if ((userEntity == null) || (userEntity.Password != encriptedPassword)) 
             await OutputPort.Handle(null);
         else
         {
