@@ -1,6 +1,4 @@
-========================
 Diseño de la Aplicación
-========================
 El archivo DiagramaArquitectura muestra un diseño de primer orden de la aplicación.
 
 ==================
