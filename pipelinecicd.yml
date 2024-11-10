@@ -1,0 +1,70 @@
+name: CI/CD Pipeline for Product Catalog Service
+
+# Ejecuta el pipeline cuando haya un push o pull request en las ramas principales
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Configuración de Node.js (puedes ajustar la versión según tu proyecto)
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      # 2. Instalación de dependencias y ejecución de tests
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+  versioning:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # 3. Actualización de versión automática
+      - name: Bump version and push tag
+        id: tag_version
+        uses: anothrNick/github-tag-action@v1.36.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_branches: main
+          custom_tag: 'v{{version}}' # Define el formato de la versión aquí
+          default_bump: patch        # Puedes cambiar a "minor" o "major" según prefieras
+
+      # 4. Generación del changelog
+      - name: Generate Changelog
+        uses: mikepenz/release-changelog-builder-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          configuration: ".github/changelog-config.yml"  # Archivo opcional para configurar el formato del changelog
+
+  deploy:
+    needs: versioning
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # 5. Implementación simulada o real (comentar esta etapa para simular)
+      - name: Deploy to simulated environment
+        run: echo "Simulating deployment..."
+        # Aquí podrías incluir comandos de despliegue para tu entorno de pruebas o producción.
